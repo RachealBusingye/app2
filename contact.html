@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Racheal">
+    <meta name="Description" content="Rhea Blossoms Company">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <header class="navbar"> 
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="bouquets.html">Bouquets</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <button class="btn-nav">Shop Now</button>
+        </nav>
+    </header>
+
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>Contact </span>Us</h1>
+        <form action="" onsubmit="return validateForm()">
+          <fieldset>
+                <legend style="text-align: center;"><h3>send us a message</h3></legend>
+                <label for="dname">Name</label>
+                <input type="text" id="dname" name="name" value="" autofocus required="required" placeholder="Enter  your name"><br></br>
+                <label for="em">Email:</label>
+                <input type="email" id="em" name="email" value="" required="required"><br></br>
+                <label for="pw">Password:</label>
+                <input type="password" id="pw" name="password" value="" required="required"><br></br>
+                <label for="fone">Phone Number</label>
+                <input type="phone number" id="fone" name="phone number" value="" required="required"><br></br>
+
+                <label>Type of roses</label>
+                <select>
+                    <option>pink roses</option>
+                    <option>tulips</option>
+                    <option>lily</option>
+                    <option>sunflower</option>
+                </select><br></br>
+
+                <label>Quantity</label>
+                <input type="number" placeholder="Amount of bouquets" required>
+                <label>Your message</label>
+                <textarea rows="6" placeholder="Special Instructions" required="required"></textarea>
+
+                <button type="submit">Submit Order</button>
+
+            </fieldset>
+        </form>
+        
+        </div>
+    </section>
+
+<!-- JavaScript Validation -->
+
+<script>
+
+function validateForm() {
+
+    let name = document.getElementById("dname").value;
+    let email = document.getElementById("em").value;
+    let password = document.getElementById("pw").value;
+    let phone = document.getElementById("fone").value;
+
+    // Name Validation
+    if (name.trim() === "") {
+        alert("Please enter your name");
+        return false;
+    }
+
+    // Email Validation
+    if (!email.includes("@") || !email.includes(".")) {
+        alert("Please enter a valid email");
+        return false;
+    }
+
+    // Password Validation
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters");
+        return false;
+    }
+
+    // Phone Validation
+    if (phone.length < 10) {
+        alert("Please enter a valid phone number");
+        return false;
+    }
+
+    alert("Form submitted successfully!");
+    return true;
+}
+
+</script>
+
+</body>
+</html>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#">My account</a>
+                <a href="#">Any orders</a>
+                <a href="#">My Favourites</a>
+
+            </div>
+        
+
+                <div class="box">
+                <h3>Locations</h3>
+                <a href="#">India</a>
+                <a href="#">USA</a>
+                <a href="#">France</a>
+                <a href="#">Japan</a>
+                <a href="#">Ukraine</a>
+
+            </div>
+
+            
+                <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+123-456-7890</a>
+                <a href="#">rheablossoms@gmail.com</a>
+                <a href="#">Kampala-Uganda - 500503</a>
+                <a href="#">Japan</a>
+                <a href="#">Ukraine</a>
+            </div>
+
+            <div class="payment-icons">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+                <i class="fa-brands fa-cc-stripe"></i>
+            </div>
+            </div>
+        <div class="credit">
+            &copy; Created by @ Racheal Busingye [editor] All Rights Reserved.
+        </div>
+        
+    </section>
+
+       <div class="social-icons">
+    <a href="https://facebook.com">
+        <i class="fab fa-facebook"></i>
+    </a>
+
+    <a href="https://wa.me/256700000000">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://instagram.com">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://twitter.com">
+        <i class="fab fa-twitter"></i>
+    </a>
+    
+</div>
+</body>
+</html>
